@@ -1,0 +1,23 @@
+entry point-
+
+009C82E3 | E8 57080000              | call zoomit.9C8B3F                      |
+009C82E8 | E9 7AFEFFFF              | jmp zoomit.9C8167                       |
+009C82ED | 8B4D F4                  | mov ecx,dword ptr ss:[ebp-C]            | ecx:EntryPoint, [ebp-0C]:BaseThreadInitThunk+19
+009C82F0 | 64:890D 00000000         | mov dword ptr fs:[0],ecx                | ecx:EntryPoint
+009C82F7 | 59                       | pop ecx                                 | ecx:EntryPoint
+009C82F8 | 5F                       | pop edi                                 | edi:EntryPoint
+009C82F9 | 5F                       | pop edi                                 | edi:EntryPoint
+009C82FA | 5E                       | pop esi                                 | esi:EntryPoint
+009C82FB | 5B                       | pop ebx                                 |
+009C82FC | 8BE5                     | mov esp,ebp                             |
+009C82FE | 5D                       | pop ebp                                 |
+009C82FF | 51                       | push ecx                                | ecx:EntryPoint
+
+
+code cave-
+
+009F3AD1 | 0000                     | add byte ptr ds:[eax],al                |
+
+pop AD-
+
+009F3B95 | 61                       | popad                                   |
